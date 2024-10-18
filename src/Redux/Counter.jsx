@@ -8,6 +8,9 @@ export const countSlice =createSlice({
             state.counter=state.counter+1
          },
          decreasing:(state,action)=>{
+            if(state.counter===0)
+                state.counter=0
+            else
             state.counter-=1
          }
     }
