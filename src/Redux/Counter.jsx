@@ -16,5 +16,5 @@ export const countSlice =createSlice({
     }
 
 })
-export const {increasing,decreasing}=countSlice.actions
+export const {increasing,decreasing}=countSlice.actions     
 export default countSlice.reducer
