@@ -1,10 +1,10 @@
 import React from 'react'
-import ShowData from './components/Data/ShowData'
-import AddData from './components/Data/AddData'
+
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
-import EditDataPage from './components/Data/EditData'
-import ShowColor from './components/colorChange/ShowColor'
-import AddColor from './components/colorChange/AddColor'
+
+import First from './task/First'
+import Second from './task/Second'
+import Result from './task/Result'
 function App() {
 
   return (
@@ -23,8 +23,9 @@ function App() {
         </Router> */}
         <Router>
           <Routes>
-            <Route path='/' element={<ShowColor/>}/>
-            <Route path='/addcolor' element={<AddColor/>}/>
+            <Route path='/' element={<First/>}/>
+            <Route path='/second' element={<Second/>}/>
+            <Route path='/result' element={<Result/>}/>
           </Routes>
         </Router>
    
