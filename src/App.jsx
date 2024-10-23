@@ -3,6 +3,8 @@ import ShowData from './components/Data/ShowData'
 import AddData from './components/Data/AddData'
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
 import EditDataPage from './components/Data/EditData'
+import ShowColor from './components/colorChange/ShowColor'
+import AddColor from './components/colorChange/AddColor'
 function App() {
 
   return (
@@ -12,12 +14,17 @@ function App() {
       <Footer color={color}/> */}
       {/* <AddTodo/>
       <ShowTodo/> */}
-     
-        <Router>
+        {/* <Router>
         <Routes>
           <Route path='/' element={<ShowData/>}></Route>
           <Route path='/adddata' element={<AddData/>}/>
           <Route path='/editdata/:id' element={<EditDataPage/>}/>
+          </Routes>
+        </Router> */}
+        <Router>
+          <Routes>
+            <Route path='/' element={<ShowColor/>}/>
+            <Route path='/addcolor' element={<AddColor/>}/>
           </Routes>
         </Router>
    
